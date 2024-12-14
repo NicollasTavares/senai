@@ -1,0 +1,20 @@
+CREATE DATABASE AVALIACAO_SAEP;
+
+USE AVALIACAO_SAEP;
+
+CREATE TABLE usuario(
+id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(80) NOT NULL
+);
+
+CREATE TABLE tarefa(
+id_tarefa INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+id_usuario INT NOT NULL,
+descricao VARCHAR(100) NOT NULL,
+setor VARCHAR(45) NOT NULL,
+prioridade ENUM('BAIXA','MÉDIA','ALTA'),
+data_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP,
+status ENUM('A fazer','Fazendo','Pronto'),
+FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+);

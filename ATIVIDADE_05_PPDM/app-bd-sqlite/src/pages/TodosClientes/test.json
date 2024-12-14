@@ -1,0 +1,51 @@
+[
+    {
+        "name": "clientes",
+        "rootpage": 2,
+        "sql": "CREATE TABLE clientes (id INTEGER PRIMARY KEY AUTOINCREMENT, nome varchar(100) NOT NULL)",
+        "tbl_name": "clientes",
+        "type": "table"
+    },
+    {
+        "name": "telefones",
+        "rootpage": 4,
+        "sql": "CREATE TABLE telefones (id INTEGER PRIMARY KEY AUTOINCREMENT, nome varchar(100) NOT NULL, data_nasc DATE NOT NULL)",
+        "tbl_name": "telefones",
+        "type": "table"
+    },
+    {
+        "name": "tbltelefones",
+        "rootpage": 5,
+        "sql": "CREATE TABLE tbltelefones (id INTEGER PRIMARY KEY AUTOINCREMENT, nome varchar(100) NOT NULL, data_nasc DATE NOT NULL)",
+        "tbl_name": "tbltelefones",
+        "type": "table"
+    },
+    {
+        "name": "tbl_telefones",
+        "rootpage": 6,
+        "sql": "CREATE TABLE tbl_telefones (id INTEGER PRIMARY KEY AUTOINCREMENT, nome varchar(100) NOT NULL, data_nasc DATE NOT NULL)",
+        "tbl_name": "tbl_telefones",
+        "type": "table"
+    },
+    {
+        "name": "telefones_has",
+        "rootpage": 7,
+        "sql": "CREATE TABLE telefones_has (id INTEGER PRIMARY KEY AUTOINCREMENT, numero TEXT NOT NULL, tipo TEXT NOT NULL)",
+        "tbl_name": "telefones_has",
+        "type": "table"
+    },
+    {
+        "name": "telefones_has_",
+        "rootpage": 8,
+        "sql": "CREATE TABLE telefones_has_ (id INTEGER PRIMARY KEY AUTOINCREMENT, numero TEXT NOT NULL, tipo TEXT NOT NULL)",
+        "tbl_name": "telefones_has_",
+        "type": "table"
+    },
+    {
+        "name": "telefones_has_clientes",
+        "rootpage": 9,
+        "sql": "CREATE TABLE telefones_has_clientes (id INTEGER PRIMARY KEY AUTOINCREMENT, numero TEXT NOT NULL, tipo TEXT NOT NULL)",
+        "tbl_name": "telefones_has_clientes",
+        "type": "table"
+    }
+]
